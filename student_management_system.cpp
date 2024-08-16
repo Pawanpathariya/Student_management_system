@@ -27,3 +27,14 @@ void add_student(){
     cout<<"Student added successful"<<endl;
     cout<<"**********************************************************************************************"<<endl;
 }
+
+//getting student detail function
+void student_detail(){
+    cout<<"Student name "<<name<<endl;
+    cout<<"Student fathername "<<fathername<<endl;
+    cout<<"Student Class "<<classs<<endl;
+    cout<<"Student Roll number  "<<roll_no<<endl;
+    cout<<"Student id "<<id<<endl;
+    cout<<"Student Address "<<address<<endl;
+    cout<<"**********************************************************************************************"<<endl;    
+}
