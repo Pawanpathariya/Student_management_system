@@ -82,3 +82,36 @@ class Fees:public Student{
     cout<<"**********************************************************************************************"<<endl;
    }
 };
+
+//Grades and marks class 
+class Grades : public Fees{
+protected:
+int math,english,hindi,physics,chemistry;
+public:
+//update marks function
+void update_marks(){
+    cout<<"Enter maths marks ";
+    cin>>math;
+    cout<<"Enter english marks ";
+    cin>>english;
+    cout<<"Enter hindi marks ";
+    cin>>hindi;
+    cout<<"Enter physics marks ";
+    cin>>physics;
+    cout<<"Enter chemistry marks ";
+    cin>>chemistry;
+    cout<<"Marks updated successful"<<endl;
+    cout<<"**********************************************************************************************"<<endl;
+}
+//display grades function
+void display_grade_marks(){
+    cout<<"Math marks :"<<math<<endl;
+    cout<<"english marks :"<<english<<endl;
+    cout<<"hindi marks :"<<hindi<<endl;
+    cout<<"physics marks :"<<physics<<endl;
+    cout<<"chemistry marks :"<<chemistry<<endl;
+    int total=math+english+hindi+physics+chemistry;
+    cout<<"Total percentage "<<total/5.0<<endl;
+    cout<<"**********************************************************************************************"<<endl;
+}
+};
