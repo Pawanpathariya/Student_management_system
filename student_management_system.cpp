@@ -51,3 +51,34 @@ void student_remove(){
     cout<<"**********************************************************************************************"<<endl;
 }
 };
+
+
+//fees class 
+class Fees:public Student{
+   protected:
+   int pay;
+   int remaining=totalfee;
+   int sid;
+  public:
+    //pay fees function
+   void pay_fee(){
+    cout<<"Enter id ";
+    cin>>sid;
+    if(id==sid){ 
+    cout<<"Student name "<<name<<endl;    
+    cout<<"Enter amount you want to pay :";
+    cin>>pay;
+    remaining=totalfee-pay;
+    cout<<"Your remaining fees is : "<<remaining<<endl;
+    }
+    else{
+        cout<<"No student id available "<<endl;
+    }
+    cout<<"**********************************************************************************************"<<endl;
+  }
+  //check fees function
+   void fee_check(){
+    cout<<"Your remaining fee from "<<totalfee<<" is "<<remaining<<endl;
+    cout<<"**********************************************************************************************"<<endl;
+   }
+};
