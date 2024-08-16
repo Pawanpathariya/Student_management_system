@@ -38,3 +38,16 @@ void student_detail(){
     cout<<"Student Address "<<address<<endl;
     cout<<"**********************************************************************************************"<<endl;    
 }
+//remove student function
+void student_remove(){
+    name="";
+    fathername="";
+    address="";
+    classs="";
+    roll_no=0;
+    id=0;
+    totalfee=0;
+    cout<<"Student deleted successful"<<endl;
+    cout<<"**********************************************************************************************"<<endl;
+}
+};
