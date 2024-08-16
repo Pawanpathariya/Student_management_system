@@ -115,3 +115,45 @@ void display_grade_marks(){
     cout<<"**********************************************************************************************"<<endl;
 }
 };
+
+int main(){
+  Grades st;
+  int op;
+  while (true){
+    cout<<"Enter 1 for Add Student "<<endl;
+    cout<<"Enter 2 for Display Student Detail "<<endl;
+    cout<<"Enter 3 for Remove Student "<<endl;
+    cout<<"Enter 4 for Pay Student fees "<<endl;
+    cout<<"Enter 5 for View Student fees "<<endl;
+    cout<<"Enter 6 for Updating Student Marks "<<endl;
+    cout<<"Enter 7 for View Student Marks "<<endl;
+    cout<<"Enter 8 for Exit "<<endl;
+    cin>>op;
+    switch (op){
+    case 1:
+        st.add_student();
+        break;
+    case 2:
+        st.student_detail();
+        break;
+    case 3:
+        st.student_remove();
+        break;
+    case 4:
+        st.pay_fee();
+        break;
+    case 5:
+        st.fee_check();
+        break;
+    case 6:
+        st.update_marks();
+        break;        
+    case 7:
+        st.display_grade_marks();
+        break;
+    }
+    if(op==8){
+        break;
+    }
+  }  
+}
