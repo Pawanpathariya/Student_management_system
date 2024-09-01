@@ -1,4 +1,4 @@
-# Student_management_system
+# Student management system
 
 Welcome to the Student Management System repository! This project is designed to help manage and organize student information effectively.
 
